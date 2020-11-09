@@ -1,0 +1,192 @@
+<testsuites name="jest tests" tests="6" failures="6" time="1.853">
+  <testsuite name="LeaderBoard" errors="0" failures="6" skipped="0" timestamp="2020-11-09T10:25:18" time="1.853" tests="6">
+    <testcase classname="LeaderBoard should render the table and buttons" name="LeaderBoard should render the table and buttons" time="0.027">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 15
+Received: 1
+    at Object.&lt;anonymous&gt; (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:59:33)
+    at Object.asyncJestTest (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="LeaderBoard should Navigate to Correct Route on button click" name="LeaderBoard should Navigate to Correct Route on button click" time="0.007">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;/rank&quot;
+Received: &quot;/&quot;
+    at Object.&lt;anonymous&gt; (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:73:36)
+    at Object.asyncJestTest (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="LeaderBoard should Sort by Rank" name="LeaderBoard should Sort by Rank" time="0.009">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;rank-1&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;h8k-navbar
+        header=&quot;SPA - LeaderBoard&quot;
+      /&gt;
+      &lt;div
+        class=&quot;text-center mt-50&quot;
+      &gt;
+        &lt;div&gt;
+          &lt;div&gt;
+            &lt;button
+              class=&quot;outlined&quot;
+              data-testid=&quot;route-rank&quot;
+              type=&quot;button&quot;
+            &gt;
+              Rank
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;outlined&quot;
+              data-testid=&quot;route-name&quot;
+              type=&quot;button&quot;
+            &gt;
+              Name
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;outlined&quot;
+              data-testid=&quot;route-points&quot;
+              type=&quot;button&quot;
+            &gt;
+              Points
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;outlined&quot;
+              data-testid=&quot;route-age&quot;
+              type=&quot;button&quot;
+            &gt;
+              Age
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;card mx-auto pb-20 mb-30&quot;
+          style=&quot;width: 50%;&quot;
+        &gt;
+          &lt;table
+            class=&quot;mt-50&quot;
+            data-testid=&quot;app-table&quot;
+          &gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;
+                  Rank
+                &lt;/th&gt;
+                &lt;th&gt;
+                  Name
+                &lt;/th&gt;
+                &lt;th
+                  class=&quot;numeric&quot;
+                &gt;
+                  Points
+                &lt;/th&gt;
+                &lt;th
+                  class=&quot;numeric&quot;
+                &gt;
+                  Age
+                &lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody
+              data-testid=&quot;app-tbody&quot;
+            &gt;
+              &lt;tr&gt;
+                &lt;td
+                  data-testid=&quot;rank-0&quot;
+                &gt;
+                  1
+                &lt;/td&gt;
+                &lt;td
+                  data-testid=&quot;name-0&quot;
+                &gt;
+                  John Doe
+                &lt;/td&gt;
+                &lt;td
+                  class=&quot;numeric&quot;
+                  data-testid=&quot;points-0&quot;
+                &gt;
+                  1025
+                &lt;/td&gt;
+                &lt;td
+                  class=&quot;numeric&quot;
+                  data-testid=&quot;age-0&quot;
+                &gt;
+                  27
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/@testing-library/dom/dist/query-helpers.js:100:13
+    at getByTestId (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
+    at validateSortByRank (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:33:21)
+    at Object.&lt;anonymous&gt; (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:91:3)
+    at Object.asyncJestTest (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="LeaderBoard should Sort by Name" name="LeaderBoard should Sort by Name" time="0.006">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;4&quot;
+Received: &quot;1&quot;
+    at validateSortByRank (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:34:33)
+    at Object.&lt;anonymous&gt; (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:97:3)
+    at Object.asyncJestTest (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="LeaderBoard should Sort by Points" name="LeaderBoard should Sort by Points" time="0.005">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;13&quot;
+Received: &quot;1&quot;
+    at validateSortByRank (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:34:33)
+    at Object.&lt;anonymous&gt; (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:103:3)
+    at Object.asyncJestTest (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="LeaderBoard should Sort by Age" name="LeaderBoard should Sort by Age" time="0.004">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;3&quot;
+Received: &quot;1&quot;
+    at validateSortByRank (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:34:33)
+    at Object.&lt;anonymous&gt; (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/src/App.test.js:109:3)
+    at Object.asyncJestTest (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/i307690/Hitchachi/788c13c5-fe56-4c0d-b47e-fb067acbf810/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
